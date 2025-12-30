@@ -36,9 +36,7 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'django-insecure-l1sx!p=odn$_9&))q7vzlt-zfo
 DEBUG = os.getenv('DEBUG', 'True').lower() == 'true'
 
 # Command: Set ALLOWED_HOSTS in production (e.g., ALLOWED_HOSTS=example.com,www.example.com)
-# Default hosts include Render deployment and local development
-default_hosts = ['culina-ai-2.onrender.com', '127.0.0.1', 'localhost']
-ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', '').split(',') if os.getenv('ALLOWED_HOSTS') else default_hosts
+ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', '').split(',') if os.getenv('ALLOWED_HOSTS') else []
 ALLOWED_HOSTS = [host.strip() for host in ALLOWED_HOSTS if host.strip()]
 
 

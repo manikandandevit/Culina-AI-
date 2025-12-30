@@ -33,7 +33,6 @@ db.sqlite3-journal
 /static_root
 
 # Environment variables
-.env
 .venv
 env/
 venv/
@@ -42,7 +41,6 @@ env.bak/
 venv.bak/
 
 # IDE
-.vscode/
 .idea/
 *.swp
 *.swo
@@ -106,3 +104,5 @@ coverage.xml
 # !*/migrations/__init__.py
 
 
+config.bat
+node_modules
